@@ -1,2 +1,2 @@
 # FunMod
-Mod for mindustry. For fun.
+Mod for mindustry. For FUN.
