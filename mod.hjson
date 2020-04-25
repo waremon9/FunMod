@@ -1,0 +1,6 @@
+name: "my-fun-mod"
+displayName: "[green]MY[gold] FUN [white] mod" //what displays in the mod selection menu
+author: "Waremon"
+description: "My mod, but for the beggining, just a copy-paste of the example mod to see how it work."
+version: "1.0.0"
+minGameVersion: "103"

@@ -1,0 +1,10 @@
+type: Conveyor
+name: FUN conveyor
+description: A really FUN conveyor.
+requirements: [
+  copper/5
+  lead/1
+]
+category: distribution
+speed: 0.14
+research: junction
