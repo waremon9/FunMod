@@ -9,7 +9,7 @@ itemCapacity: 16
 craftTime: 40
 updateEffect: smeltsmoke
 consumes: {
-  power: 0.8
+  power: 0.7
   items: {
     items: [
       lead/5

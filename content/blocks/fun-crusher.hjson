@@ -6,10 +6,10 @@ health: 320
 hasPower: true
 hasItems: true
 itemCapacity: 5
-craftTime: 22
+craftTime: 11
 updateEffect: formsmoke 
 consumes: {
-  power: 0.5
+  power: 0.9
   items: {
     items: [
       fun/1

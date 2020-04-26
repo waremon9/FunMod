@@ -11,7 +11,7 @@ liquiCapacity: 100
 craftTime: 420
 updateEffect: smeltsmoke
 consumes: {
-  power: 0.5
+  power: 1.8
   items: {
     items: [
       fun-alloy/50
