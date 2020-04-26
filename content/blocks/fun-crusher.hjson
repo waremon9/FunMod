@@ -1,0 +1,32 @@
+type: GenericCrafter
+name: FUN crusher
+description: Crush FUN (with water) to produce FUN powder.
+size: 2
+health: 320
+hasPower: true
+hasItems: true
+itemCapacity: 5
+craftTime: 22
+updateEffect: formsmoke 
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      fun/1
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.065
+  }
+}
+requirements: [
+  copper/100
+  fun/50
+  fun-alloy/25
+]
+category: crafting
+research: fun-alloy-smelter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: fun-powder/1
