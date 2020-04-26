@@ -1,0 +1,33 @@
+type: GenericCrafter
+name: FUN crafter
+description: Allow you to get some FUN by mixing silicon and copper with slag.
+size: 2
+health: 480
+hasPower: true
+hasItems: true
+itemCapacity: 20
+craftTime: 90
+updateEffect: producesmoke
+consumes: {
+  power: 0.35
+  items: {
+    items: [
+      silicon/2
+      copper/5
+    ]
+  }
+  liquid: {
+    liquid: slag
+    amount: 0.5
+  }
+}
+requirements: [
+  copper/80
+  silicon/25
+  graphite/30
+]
+category: crafting
+research: junction
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: fun/4
