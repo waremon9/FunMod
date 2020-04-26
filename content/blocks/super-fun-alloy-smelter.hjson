@@ -7,7 +7,7 @@ hasPower: true
 hasItems: true
 hasLiquids: true
 itemCapacity : 240
-liquiCapacity: 100
+liquiCapacity: 60
 craftTime: 420
 updateEffect: smeltsmoke
 consumes: {
@@ -20,7 +20,7 @@ consumes: {
   }
   liquid: {
     liquid: cryofluid
-    amount: 0.1428
+    amount: 0.1
   }
 }
 requirements: [
