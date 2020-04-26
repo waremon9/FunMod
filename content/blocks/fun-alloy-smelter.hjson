@@ -1,0 +1,27 @@
+type: GenericSmelter
+name: FUN alloy smelter
+description: Combines lead and FUN to produce FUN alloy.
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 40
+updateEffect: smeltsmoke
+consumes: {
+  power: 0.8
+  items: {
+    items: [
+      lead/5
+      fun/8
+    ]
+  }
+}
+requirements: [
+  lead/50
+  fun/70
+  copper/120
+]
+category: crafting
+research: fun-conveyor
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: fun-alloy/3
