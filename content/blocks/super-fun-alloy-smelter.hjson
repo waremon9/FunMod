@@ -1,0 +1,38 @@
+type: GenericSmelter
+name: Super FUN alloy smelter
+description: Combines huge quantity of FUN alloy and FUN powder with some cryofluid to produce super FUN alloy.
+size: 3
+health: 600
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity : 240
+liquiCapacity: 100
+craftTime: 420
+updateEffect: smeltsmoke
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      fun-alloy/50
+      fun-powder/120
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.1428
+  }
+}
+requirements: [
+  titanium/500
+  graphite/130
+  silicon/50
+  copper/1000
+  fun/100
+  fun-alloy/1
+]
+category: crafting
+research: fun-alloy-smelter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: super-fun-alloy/1
