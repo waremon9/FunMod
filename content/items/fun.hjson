@@ -1,0 +1,6 @@
+type: material
+name: FUN
+description: A pretty FUN resource.
+hardness: 3
+cost: 2
+color: ffffff

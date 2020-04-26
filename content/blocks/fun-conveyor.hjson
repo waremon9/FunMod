@@ -2,8 +2,9 @@ type: Conveyor
 name: FUN conveyor
 description: A really FUN conveyor.
 requirements: [
-  copper/5
-  lead/1
+  copper/4
+  lead/2
+  fun/2
 ]
 category: distribution
 speed: 0.14
