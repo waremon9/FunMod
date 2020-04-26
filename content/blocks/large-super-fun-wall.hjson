@@ -1,0 +1,11 @@
+name: Large super FUN Wall
+description: A large wall made of super FUN alloy. It wont break easily.
+type: Wall
+health: 4200
+size: 2
+requirements: [
+  fun/200
+  super-fun-alloy/8
+]
+category: defense
+research: super-fun-wall

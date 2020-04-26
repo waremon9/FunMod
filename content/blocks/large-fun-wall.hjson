@@ -1,0 +1,11 @@
+name: Large FUN Wall
+description: A large wall made of FUN. A bit stronger than a titanium one.
+type: Wall
+health: 1900
+size: 2
+requirements: [
+  fun/28
+  fun-alloy/16
+]
+category: defense
+research: fun-wall

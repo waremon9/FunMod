@@ -1,0 +1,11 @@
+name: FUN Wall
+description: A wall made of FUN. A bit stronger than a titanium one.
+type: Wall
+health: 500
+size: 1
+requirements: [
+  fun/7
+  fun-alloy/4
+]
+category: defense
+research: copper-wall

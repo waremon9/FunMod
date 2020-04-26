@@ -1,0 +1,11 @@
+name: super FUN Wall
+description: A wall made of FUN alloy. Much stronger than a fun wall.
+type: Wall
+health: 1200
+size: 1
+requirements: [
+  fun/50
+  super-fun-alloy/2
+]
+category: defense
+research: fun-wall
