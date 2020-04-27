@@ -1,0 +1,25 @@
+type: BurnerGenerator
+name: FUN Generator
+description: A FUN generator. Specialized in processing low and medium tier FUN fuel.
+size: 2
+hasPower: true
+hasItems: true
+itemDuration: 40
+powerProduction: 7
+consumes: {
+  items: {
+    items: [
+        coalun/1
+        pyratun/1
+    ]
+    optional: true
+  }
+}
+requirements: [
+  metaglass/80
+  silicon/60
+  fun-alloy/50
+  graphite/5
+]
+category: power
+research: fun-crusher
