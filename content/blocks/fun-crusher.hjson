@@ -1,4 +1,3 @@
-type: GenericCrafter
 name: FUN crusher
 description: Crush FUN (with water) to produce FUN powder.
 size: 2
