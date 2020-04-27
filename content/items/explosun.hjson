@@ -1,0 +1,6 @@
+type: material
+name: ExplosUN
+description: One of the best way to heat things up. But be carefull, it's higly FUN and explosive! Even funnier when throw at your enemies.
+color: ffffff
+explosiveness : 0.8
+flammability : 4
