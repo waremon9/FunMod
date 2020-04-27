@@ -1,0 +1,27 @@
+type: GenericCrafter
+name: CoalUN mixer
+description: Craft coalUN by mixing coal and FUN powder.
+size: 2
+health: 300
+hasItems: true
+itemCapacity: 10
+craftTime: 45
+updateEffect: producesmoke
+consumes: {
+  items: {
+    items: [
+      coal/1
+      fun-powder/1
+    ]
+  }
+}
+requirements: [
+  copper/20
+  graphite/10
+  fun/10
+]
+category: crafting
+research: fun-conveyor
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: coalun/1

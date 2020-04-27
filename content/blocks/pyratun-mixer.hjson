@@ -1,0 +1,33 @@
+type: GenericCrafter
+name: PyratUN mixer
+description: Craft pyratUN by mixing pyratite and FUN powder. Need water to cool it down.
+size: 3
+health: 740
+hasItems: true
+hasPower: true
+itemCapacity: 15
+craftTime: 70
+updateEffect: producesmoke
+consumes: {
+  power: 1.1
+  items: {
+    items: [
+      pyratite/1
+      fun-powder/6
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.3
+  }
+}
+requirements: [
+  silicon/10
+  fun-alloy/15
+  titanium/100
+]
+category: crafting
+research: coalun-mixer
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: pyratun/1
