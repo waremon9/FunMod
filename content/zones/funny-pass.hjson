@@ -1,0 +1,28 @@
+name: Funny Pass
+description: You feel that this place might be filled with FUN. Go take a look and discover new and FUN technologies.
+loadout: basicNucleus
+startingItems: [
+  copper/200
+  lead/100
+]
+conditionWave: 14
+launchPeriod: 7
+requirements: [
+  {
+    type: ZoneWave
+    zone: stainedMountains
+    wave: 20
+  }
+]
+resources: [
+  copper
+  lead
+  titanium
+  thorium
+  coal
+  sand
+  scrap
+  fun
+  iceore
+  magmore
+]
