@@ -1,0 +1,7 @@
+type: material
+name: MagmOre
+description: A trully hot ore. Handle with care.
+hardness: 4
+cost: 4
+flammability: 2.4
+color: ff0000

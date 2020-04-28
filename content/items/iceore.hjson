@@ -1,0 +1,6 @@
+type: material
+name: IceOre
+description: What a cold ore. Don't touch it or you'll freeze.
+hardness: 4
+cost: 4
+color: 6060ff
