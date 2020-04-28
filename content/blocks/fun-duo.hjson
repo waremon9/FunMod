@@ -1,0 +1,57 @@
+type: "DoubleTurret",
+name: "FUN duo",
+description: "A Duo made out of FUN. Lower range than a classic duo but huge damage (for a duo) and high speed",
+health: 500,
+size: 1,
+reload: 12.0,
+range: 80,
+ammoUseEffect: "shellEjectSmall",
+inaccuracy: 5,
+rotatespeed: 12,
+ammo: {
+    fun-powder: {
+        speed: 3.0,
+        damage: 9.0,
+        bulletWidth: 3,
+        bulletHeight: 5,
+        shootEffect: "shootSmall",
+        smokeEffect: "shootSmallSmoke",
+        ammoMultiplier: 2
+    },
+    fun: {
+        speed: 4.0,
+        damage: 9.0,
+        bulletWidth: 5,
+        bulletHeight: 7,
+        shootEffect: "shootSmall",
+        smokeEffect: "shootSmallSmoke",
+        ammoMultiplier: 3
+    },
+    fun-alloy: {
+        speed: 4.0,
+        damage: 15.0,
+        bulletWidth: 6,
+        bulletHeight: 8,
+        shootEffect: "shootSmall",
+        smokeEffect: "shootSmallSmoke",
+        reloadMultiplier: 1.1
+        ammoMultiplier: 5
+    },
+    super-fun-alloy: {
+        speed: 5.0,
+        damage: 18.0,
+        bulletWidth: 8,
+        bulletHeight: 11,
+        shootEffect: "shootSmall",
+        smokeEffect: "shootSmallSmoke",
+        ammoMultiplier: 15
+        reloadMultiplier: 1.8
+    }
+},
+requirements: [
+    fun-alloy/10
+    lead/50
+    silicon/10
+],
+category: "turret",
+research: "duo"
