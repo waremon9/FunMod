@@ -1,0 +1,35 @@
+type: GenericSmelter
+name: NeutrOre smelter
+description: Combines iceOre and MagmOre to create a balanced neutrOre, as all things shoud be.
+size: 3
+health: 700
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity : 20
+craftTime: 100
+updateEffect: smeltsmoke
+consumes: {
+  power: 2.0
+  items: {
+    items: [
+      iceore/5
+      magmore/5
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.115
+  }
+}
+requirements: [
+  iceore/60
+  magmore/60
+  explosun/20
+  super-fun-alloy/5
+]
+category: crafting
+research: fun-alloy-smelter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: neutrore/2

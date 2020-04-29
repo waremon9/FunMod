@@ -1,0 +1,5 @@
+type: material
+name: NeutrOre
+description: By mixing iceOre and magmOre together, they fuse into a neutral ore.
+cost: 4
+color: 582900
