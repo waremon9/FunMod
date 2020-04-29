@@ -1,0 +1,11 @@
+name: Large neutrOre Wall
+description: A large wall made of neutrOre. You have to be strong in order to stay neutral.
+type: Wall
+health: 6800
+size: 2
+requirements: [
+  neutrore/60
+  plastanium/20
+]
+category: defense
+research: neutrore-wall
