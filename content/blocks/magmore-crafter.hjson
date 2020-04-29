@@ -1,0 +1,33 @@
+type: GenericCrafter
+name: MagmOre crafter
+description: Allow you to get magmOre by mixing coal and sand with slag.
+size: 2
+health: 480
+hasPower: true
+hasItems: true
+itemCapacity: 20
+craftTime: 120
+updateEffect: producesmoke
+consumes: {
+  power: 0.6
+  items: {
+    items: [
+      coal/2
+      sand/5
+    ]
+  }
+  liquid: {
+    liquid: slag
+    amount: 1.0
+  }
+}
+requirements: [
+  thorium/80
+  plastanium/25
+  fun-alloy/30
+]
+category: crafting
+research: fun-crafter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: magmore/2
