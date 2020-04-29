@@ -1,0 +1,11 @@
+name: IceOre Wall
+description: A wall made of iceOre. Stronger than thorium.
+type: Wall
+health: 1100
+size: 1
+requirements: [
+  iceore/15
+  graphite/5
+]
+category: defense
+research: fun-wall

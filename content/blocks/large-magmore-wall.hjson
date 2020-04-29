@@ -1,0 +1,11 @@
+name: Large MagmOre Wall
+description: A large wall made of magmOre. Stronger than thorium.
+type: Wall
+health: 4400
+size: 2
+requirements: [
+  magmore/60
+  graphite/20
+]
+category: defense
+research: fun-wall

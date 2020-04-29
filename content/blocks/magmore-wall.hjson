@@ -1,0 +1,11 @@
+name: MagmOre Wall
+description: A wall made of magmOre. Stronger than thorium.
+type: Wall
+health: 1100
+size: 1
+requirements: [
+  magmore/15
+  graphite/5
+]
+category: defense
+research: magmore-wall
