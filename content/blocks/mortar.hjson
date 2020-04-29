@@ -1,0 +1,21 @@
+size: 3
+update: true
+solid: true
+hasItems: true
+configurable: true
+localizedName: "Mortar"
+description: "A player-activatable block that shot a powerful bullets in the direction of the user. Fixed range of 21 cells."
+category: turret
+requirements: [
+  graphite/150,
+  silicon/120,
+  fun-alloy/100
+  super-fun-alloy/50
+]
+consumes: {
+  items: {
+    items: [
+      explosun/2
+    ]
+  }
+}
