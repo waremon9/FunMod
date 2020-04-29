@@ -6,8 +6,8 @@ Mod for mindustry. For FUN.
 ### Ores
 
 - FUN : Used for almost everything in this mod.
-- IceOre: No sprite, no use.
-- MagmOre: No sprite, can be used to generate power.
+- IceOre
+- MagmOre
 
 ### Items
 
@@ -17,6 +17,7 @@ Mod for mindustry. For FUN.
 - CoalUN
 - PyratUN
 - ExplosUN
+- NeutrOre
 
 
 ### Crafters
@@ -24,20 +25,29 @@ Mod for mindustry. For FUN.
 
 - FUN alloy smellter: craft FUN alloy.
 - Super FUN alloy smelter: craft super FUN alloy.
-- FUN pulverizer: craft FUN powder.
+- FUN crusher: craft FUN powder.
 - CoalUN mixer: craft coalUN.
 - PyratUN mixer: craft pyratUN.
 - ExplosUN mixer: craft exploSUN
 - FUN crafter: craft FUN (usefull when there is no FUN around)
+- IceORe crafter: craft iceOre (usefull when there is none around)
+- MagmOre crafter: craft magmOre (usefull when there is none around)
+- NeutrOre smellter: craft neutrOre.
 
 ### Power generator
 
 - FUN generator: use coalUN or pyratUN.
 - FUN reactor: use pyratUN or explosUN, and cryofluid.
 
+### Turret
+- FUN duo
+- Mortar: Shoot a huge (and expensive) bullet. Activate on player click. Aim with your spaceship, the bullet is shooted in your direction. Travel a fixed distance (\~= 21 cells).
+
 
 ### Others
 
 - FUN conveyor: faster than titanium.
 - FUN wall: 1x1 and 2x2 wall.
-- Super FUN wall: 1x1 and 2x2 wall. 
+- Super FUN wall: 1x1 and 2x2 wall.
+- Neutrore wall: 1x1 and 2x2 wall.
+- 1 Map: Funny Pass, discover the FUN technology. 
