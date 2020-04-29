@@ -1,0 +1,14 @@
+name: MagmiceOre Container
+description: This hot way of storing items will make you cooler.
+type: Vault
+itemCapacity: 1500
+hasItems: true
+health: 1950
+size: 2
+requirements: [
+  titanium/120
+  iceore/75
+  magmore/75
+]
+category: effect
+research: fun-container
