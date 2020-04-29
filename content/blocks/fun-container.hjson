@@ -1,0 +1,14 @@
+name: FUN Container
+description: Funny way of storing items.
+type: Vault
+itemCapacity: 850
+hasItems: true
+health: 900
+size: 2
+requirements: [
+  titanium/90
+  fun-alloy/50
+  thorium/40
+]
+category: effect
+research: container
