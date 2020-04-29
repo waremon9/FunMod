@@ -1,0 +1,15 @@
+name: NeutrOre Vault
+description: Neutral way of storing items.
+type: Vault
+itemCapacity: 11500
+hasItems: true
+health: 3000
+size: 3
+requirements: [
+  thorium/650
+  neutrore/220
+  plastanium/80
+  surge-alloy/40
+]
+category: effect
+research: fun-vault
