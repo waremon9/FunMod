@@ -27,7 +27,6 @@ for (var i = 0; i < 50; i++) {
     listBulletFrag1[i] = new BombBulletType(1, 1, "shell"); 
     listBulletFrag1[i].speed = Math.random()*2.6+0.7;
     listBulletFrag1[i].lifetime = Math.random()*35+25
-    print("bullet number : "+ i +", speed = "+ listBulletFrag1[i].speed + ", lifetime = "+listBulletFrag1[i].lifetime);
     listBulletFrag1[i].fragBullets = 3;
     listBulletFrag1[i].damage = 70;
     listBulletFrag1[i].splashDamage = 50;
