@@ -1,0 +1,10 @@
+type: Conveyor
+name: NeutrOre conveyor
+description: A neutral conveyor.
+requirements: [
+  graphite/4
+  neutrore/2
+]
+category: distribution
+speed: 0.1987 //this conveyor is a revolution...
+research: fun-conveyor
