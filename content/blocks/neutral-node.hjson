@@ -1,0 +1,14 @@
+type: PowerNode
+name: Neutral node
+description: Transfers power using the stable capacity of neutrOre.
+size: 1
+health: 300
+maxNodes: 25
+laserRange: 9
+requirements: [
+    neutrore/15
+    silicon/5
+    fun/15
+]
+category: "power"
+research: "power-node"
