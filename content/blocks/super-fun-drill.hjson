@@ -1,11 +1,11 @@
 name: super FUN Drill
-description: A even FUNnier drill. Powerful but need FUN to work. (changed to power due to bug.)
+description: A even FUNnier drill. Powerful but need a lot of power to work.
 type: Drill
 size: 4
 tier: 4
 drillTime: 160
 consumes: {
-    power: 4
+    power: 4.6
 }
 requirements: [
   fun/650
