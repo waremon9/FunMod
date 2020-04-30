@@ -1,0 +1,13 @@
+name: FUN Drill
+description: A very FUN drill.
+type: Drill
+size: 2
+tier: 3
+drillTime: 220
+requirements: [
+  fun/80
+  fun-alloy/40
+  graphite/20
+]
+category: production
+research: pneumatic-drill
