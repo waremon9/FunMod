@@ -6,13 +6,13 @@ health: 740
 hasItems: true
 hasPower: true
 itemCapacity: 15
-craftTime: 70
+craftTime: 40
 updateEffect: producesmoke
 consumes: {
   power: 1.1
   items: {
     items: [
-      pyratite/1
+      pyratite/2
       fun-powder/6
     ]
   }
@@ -30,4 +30,4 @@ category: crafting
 research: coalun-mixer
 idleSound: respawning
 idleSoundVolume: 0.5
-outputItem: pyratun/1
+outputItem: pyratun/4

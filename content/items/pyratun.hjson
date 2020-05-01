@@ -2,4 +2,4 @@ type: resource
 name: PyratUN
 description: Better fuel than pyratite. More advanced and safer, isn't explosive. Can also be used to craft things.
 color: ffffff
-flammability : 1.9
+flammability : 3.45

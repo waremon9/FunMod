@@ -6,14 +6,14 @@ health: 2200
 hasItems: true
 hasPower: true
 itemCapacity: 40
-craftTime: 120
+craftTime: 70
 updateEffect: producesmoke
 consumes: {
   power: 2.4
   items: {
     items: [
-      blast-compound/1
-      fun-powder/20
+      blast-compound/2
+      fun-powder/10
     ]
   }
   liquid: {
@@ -25,10 +25,9 @@ requirements: [
   thorium/50
   plastanium/20
   super-fun-alloy/10
-  pyratun/5
 ]
 category: crafting
 research: pyratun-mixer
 idleSound: respawning
 idleSoundVolume: 0.5
-outputItem: explosun/1
+outputItem: explosun/3
