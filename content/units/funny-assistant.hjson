@@ -1,0 +1,33 @@
+{
+	"type": "BuilderDrone",
+	"name": "Funny assistant",
+	"description": "A powerful assistant needed if you want to build advanced building before the end of the day",
+    "drag": 0.005,
+	"speed": 0.75,
+	"mass": 3,
+	"hitsize": 15,
+	"health": 100,
+    "flying": true,
+	"engineOffset": 8,
+	"engineSize": 2,
+	"rotatespeed": 3,
+	"buildPower": 0.8,
+	"baseRotateSpeed": 0.25,
+	"shootCone": 360,
+
+    //error without weapon, so i gave him something useless
+	"weapon": {
+		"name": "nothing",
+		"length": 1,
+		"width": 0.1,
+		"reload": 100000000000000,
+        "shots": 0,
+        "shootcone": 360,
+        "shotDelay": 2,
+		"alternate": false,
+        "velocityRnd": 0.4,
+        "spacing": 0.5,
+        "shootSound": "artillery",
+		"bullet": "healBullet"
+	}
+}
