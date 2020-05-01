@@ -1,0 +1,31 @@
+type: UnitFactory
+name: Assistant drone house
+description: Build assistant drone to increase your building power.
+size: 2
+produceTime : 1800
+launchVelocity: 0.5
+maxSpawn: 2
+unitType: "funny-assistant"
+hasItems: true
+hasPower: true
+itemCapacity: 50
+updateEffect: producesmoke
+consumes: {
+    power: 3
+    items: {
+        items: [
+        lead/200
+        copper/200
+        super-fun-alloy/5
+        ]
+    }
+}
+requirements: [
+  silicon/50
+  graphite/50
+  fun-alloy/50
+]
+category: units
+research: phantom-factory
+idleSound: respawning
+idleSoundVolume: 0.5
