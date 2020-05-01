@@ -1,0 +1,17 @@
+type: Battery
+name: FUN battery
+size: 1
+description: A battery made out of FUN.
+health: 300
+canOverdrive: true
+consumes: {
+    powerBuffered: 22000.0
+}
+requirements: [
+  copper/20
+  graphite/10
+  fun/10
+]
+category: power
+research: battery
+  
