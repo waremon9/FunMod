@@ -4,7 +4,7 @@ description: A FUN reactor. Produce huge amount of power. Specialized in process
 size: 3
 hasPower: true
 hasItems: true
-itemDuration: 90
+itemDuration: 105
 powerProduction: 14.5
 consumes: {
     items: {

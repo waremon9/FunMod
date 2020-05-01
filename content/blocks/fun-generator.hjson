@@ -4,7 +4,7 @@ description: A FUN generator. Specialized in processing low and medium tier FUN 
 size: 2
 hasPower: true
 hasItems: true
-itemDuration: 40
+itemDuration: 90
 powerProduction: 7
 consumes: {
   items: {

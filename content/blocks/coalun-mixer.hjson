@@ -4,14 +4,14 @@ description: Craft coalUN by mixing coal and FUN powder.
 size: 2
 health: 300
 hasItems: true
-itemCapacity: 10
-craftTime: 45
+itemCapacity: 15
+craftTime: 35
 updateEffect: producesmoke
 consumes: {
   items: {
     items: [
-      coal/1
-      fun-powder/1
+      coal/2
+      fun-powder/2
     ]
   }
 }
@@ -24,4 +24,4 @@ category: crafting
 research: fun-conveyor
 idleSound: respawning
 idleSoundVolume: 0.5
-outputItem: coalun/1
+outputItem: coalun/3

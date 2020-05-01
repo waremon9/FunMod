@@ -95,4 +95,4 @@ requirements: [
     silicon/10
 ],
 category: "turret",
-research: "duo"
+research: "scatter"
