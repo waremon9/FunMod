@@ -1,0 +1,33 @@
+type: GenericSmelter
+name: silicon multi-smelter
+description: Reduces sand with pure coal to produces silicon. Use water and power for better efficiency.
+size: 3
+health: 780
+hasPower: true
+hasItems: true
+itemCapacity: 15
+craftTime: 28
+updateEffect: smeltsmoke
+consumes: {
+  power: 1.2
+  items: {
+    items: [
+      sand/6
+      coal/3
+    ]
+  }
+  liquid:{
+      liquid:water
+      amount: 0.11add
+  }
+}
+requirements: [
+  lead/230
+  graphite/50
+  silicon/35
+]
+category: crafting
+research: silicon-smelter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: silicon/3
