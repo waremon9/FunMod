@@ -1,0 +1,98 @@
+type: ItemTurret
+name: the Fast
+description: A turret that shoot a large amount of bullet in a short amount of time. (with huge innacuracy)
+health: 900
+size: 2
+reload: 6.0
+range: 140
+ammoUseEffect: "shellEjectSmall"
+inaccuracy: 15
+rotatespeed: 10
+itemCapacity: 25
+ammoPerShot: 3
+shots: 3
+restitution: 0.1
+ammo: {
+    copper: {
+        speed: 7.0
+        lifetime: 150
+        damage: 6.0
+        bulletWidth: 5
+        bulletHeight: 7
+        shootEffect: "shootSmall"
+        smokeEffect: "shootSmallSmoke"
+        ammoMultiplier: 6
+    },
+    graphite: {
+        speed: 7.0
+        lifetime: 160
+        damage: 11.0
+        bulletWidth: 5
+        bulletHeight: 7
+        shootEffect: "shootSmall"
+        smokeEffect: "shootSmallSmoke"
+        ammoMultiplier: 9
+    },
+    silicon: {
+        speed: 7.0
+        lifetime: 160
+        damage: 10.0
+        bulletWidth: 5
+        bulletHeight: 7
+        shootEffect: "shootSmall"
+        smokeEffect: "shootSmallSmoke"
+        ammoMultiplier: 9
+        reloadMultiplier: 1.35
+    },
+    fun-alloy: {
+        speed: 7.0
+        lifetime: 160
+        damage: 10.0
+        bulletWidth: 5
+        bulletHeight: 7
+        shootEffect: "shootSmall"
+        smokeEffect: "shootSmallSmoke"
+        ammoMultiplier: 6
+        reloadMultiplier: 1.1
+    },
+    neutrore: {
+        speed: 7.0
+        lifetime: 160
+        damage: 18.0
+        bulletWidth: 6
+        bulletHeight: 8
+        shootEffect: "shootSmall"
+        smokeEffect: "shootSmallSmoke"
+        ammoMultiplier: 6
+        reloadMultiplier: 1.4
+        status: shocked
+        statusDuration: 300
+    },
+    pyratun: {
+        speed: 4.0
+        lifetime: 180
+        damage: 25.0
+        bulletWidth: 6
+        bulletHeight: 8
+        shootEffect: "shootSmall"
+        smokeEffect: "shootSmallSmoke"
+        ammoMultiplier: 6
+        reloadMultiplier: 0.7
+        fragBullets: 3
+        status: burning
+        fragBullet: {
+            type: BombBulletType
+            lifetime:20
+            damage: 10
+            splashDamageRadius: 3
+            splashDamage: 7
+        }
+    }
+},
+requirements: [
+    fun-alloy/10
+    lead/50
+    silicon/10
+],
+category: "turret",
+research: "duo"
