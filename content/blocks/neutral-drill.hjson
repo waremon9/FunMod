@@ -1,0 +1,17 @@
+name: Neutral Drill
+description: A drill doing every thing we ask. Be it for good or evil.
+type: Drill
+size: 3
+tier: 4
+drillTime: 185
+consumes: {
+    power: 1.58
+}
+requirements: [
+  iceore/50
+  magmore/50
+  graphite/20
+  neutrore/40
+]
+category: production
+research: fun-drill
