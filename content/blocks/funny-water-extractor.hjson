@@ -1,0 +1,20 @@
+type: Fracker
+name: Funny water Extractor
+description: Extracts water from the ground using power.
+liquidCapacity: 50
+size: 2
+hasPower: true
+hasLiquids: true
+pumpAmount: 0.35
+consumes: {
+    power: 3
+}
+requirements: [
+    fun-alloy/20
+    metaglass/40
+    titanium/60
+]
+category: production
+research: water-extractor
+idleSound: respawning
+idleSoundVolume: 0.5
