@@ -49,11 +49,19 @@ for (var i = 0; i < 50; i++) {
 
 const mortar = extendContent(Block, "mortar", {
     buildConfiguration(tile, table){
-        this.mortarList.forEach(mortar => {
-            if(mortar[0] == tile.x && mortar[1] == tile.y){
-                rightMortar = mortar;
+        var findIt = false;
+        this.mortarList.forEach(e => {
+            if(e[0] == tile.x && e[1] == tile.y){
+                rightMortar = e;
+                findIt = true;
             }
         })
+        
+        if(!findIt){ //only happen once per tower
+            rightMortar = [tile.x, tile.y, false, 0];
+            this.mortarList.push(rightMortar)
+        }
+
         table.addImageButton(Icon.upOpen, Styles.clearTransi, run(() => {
             tile.configure(1)
         })).size(50).disabled(boolf(b => tile.entity != null && !tile.entity.cons.valid() || (new Date().getTime() - rightMortar[4]) < 1000 ))
@@ -81,36 +89,31 @@ const mortar = extendContent(Block, "mortar", {
     mortarList : [],
 
     configured(tile, player, value){
-        if(value == 0){ //only happen when placed.
-            this.mortarList.push([tile.x, tile.y, false, 0, 0])
+
+        this.mortarList.forEach(e => {
+            if(e[0] == tile.x && e[1] == tile.y){
+                rightMortar = e;
+            }
+        })
+
+        if (value == 1 && tile.entity.cons.valid()){
+            Effects.effect(mortarLaunchEffect, tile)
+
+            //do math to known angle
+            if(!rightMortar[2]) angle = this.doSomeMath(tile, player);
+
+            for(var i = 0; i< listMortarBullet.length; i++){
+                if (rightMortar[2]) Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), rightMortar[3], 0.95, 4.5);
+                else Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), angle, 0.95, 4.5)
+            }
+            rightMortar[4] =  new Date().getTime();
+            tile.entity.cons.trigger()
         }
-        else{
 
-            this.mortarList.forEach(mortar => {
-                if(mortar[0] == tile.x && mortar[1] == tile.y){
-                    rightMortar = mortar;
-                }
-            })
-
-            if (value == 1 && tile.entity.cons.valid()){
-                Effects.effect(mortarLaunchEffect, tile)
-
-                //do math to known angle
-                if(!rightMortar[2]) angle = this.doSomeMath(tile, player);
-
-                for(var i = 0; i< listMortarBullet.length; i++){
-                    if (rightMortar[2]) Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), rightMortar[3], 0.95, 4.5);
-                    else Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), angle, 0.95, 4.5)
-                }
-                rightMortar[4] =  new Date().getTime();
-                tile.entity.cons.trigger()
-            }
-
-            else if(value == 2){
-                if(rightMortar[2]) rightMortar[2] = false;
-                else rightMortar[2] = true;
-                rightMortar[3] = this.doSomeMath(tile, player);
-            }
+        else if(value == 2){
+            if(rightMortar[2]) rightMortar[2] = false;
+            else rightMortar[2] = true;
+            rightMortar[3] = this.doSomeMath(tile, player);
         }
     }
 })
