@@ -25,6 +25,6 @@ idleSound: respawning
 idleSoundVolume: 0.5
 outputLiquid: {
   liquid: molten-magmore
-  amount: 12.5
+  amount: 4.17
 }
 
