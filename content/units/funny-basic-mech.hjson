@@ -1,0 +1,16 @@
+type: GroundUnit
+name: FUN Mech Unit
+description: A FUNny unit.
+speed: 0.07
+flying: false
+health: 500
+engineOffset: 5.5
+range: 60
+rotatespeed: 0.32
+shootCone: 23
+weapon: {
+    name: funny-basic-mech-weapon
+    reload: 45
+    alternate: true
+    bullet: lightning
+}
