@@ -1,0 +1,20 @@
+name: Hot Generator
+description: Produces power from the heat of molten magmore.
+size: 2
+hasPower: true
+hasLiquids: true
+liquidCapacity: 50
+powerProduction: 15
+consumes: {
+  liquid: {
+    liquid: molten-magmore
+    amount: 0.083
+  }
+}
+requirements: [
+  metaglass/50
+  silicon/30
+  fun-alloy/30
+]
+category: power
+research: magmore-crucible
