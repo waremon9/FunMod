@@ -1,0 +1,29 @@
+type: UnitFactory
+name: Tank mech factory
+description: Build tanky unit but they deal no damage.
+size: 3
+produceTime : 900
+maxSpawn: 3
+unitType: tank-mech
+hasItems: true
+hasPower: true
+itemCapacity: 200
+consumes: {
+    power: 1.7
+    items: {
+        items: [
+            titanium/100
+            graphite/50
+        ]
+    }
+}
+requirements: [
+  silicon/100
+  graphite/120
+  copper/2000
+  lead/1000
+]
+category: units
+research: dagger-factory
+idleSound: respawning
+idleSoundVolume: 0.5

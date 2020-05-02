@@ -1,0 +1,14 @@
+type: GroundUnit
+name: Tank Mech Unit
+description: A very tanky unit. But deal no damage.
+speed: 0.07
+flying: false
+health: 6500
+mass: 6
+range: 0
+maxVelocity: 1.0
+weapon: {
+    name: nothing
+    reload: 10000000000
+    bullet:  standardCopper 
+}
