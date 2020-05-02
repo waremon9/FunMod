@@ -50,7 +50,9 @@ for (var i = 0; i < 50; i++) {
 const mortar = extendContent(Block, "mortar", {
     buildConfiguration(tile, table){
         this.mortarList.forEach(mortar => {
-            if(mortar[0] == tile.x && mortar[1] == tile.y) rightMortar = mortar;
+            if(mortar[0] == tile.x && mortar[1] == tile.y){
+                rightMortar = mortar;
+            }
         })
         table.addImageButton(Icon.upOpen, Styles.clearTransi, run(() => {
             tile.configure(1)
@@ -85,7 +87,9 @@ const mortar = extendContent(Block, "mortar", {
         else{
 
             this.mortarList.forEach(mortar => {
-                if(mortar[0] == tile.x && mortar[1] == tile.y) rightMortar = mortar;
+                if(mortar[0] == tile.x && mortar[1] == tile.y){
+                    rightMortar = mortar;
+                }
             })
 
             if (value == 1 && tile.entity.cons.valid()){
