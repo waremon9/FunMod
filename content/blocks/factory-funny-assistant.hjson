@@ -9,7 +9,6 @@ unitType: "funny-assistant"
 hasItems: true
 hasPower: true
 itemCapacity: 50
-updateEffect: producesmoke
 consumes: {
     power: 3
     items: {

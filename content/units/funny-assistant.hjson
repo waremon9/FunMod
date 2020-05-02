@@ -22,7 +22,6 @@
 		"width": 0.1,
 		"reload": 100000000000000,
         "shots": 0,
-        "shootcone": 360,
         "shotDelay": 2,
 		"alternate": false,
         "velocityRnd": 0.4,
