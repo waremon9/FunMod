@@ -9,7 +9,7 @@ hasItems: true
 hasPower: true
 itemCapacity: 40
 consumes: {
-    power: 1.7
+    power: 1.2
     items: {
         items: [
             titanium/20
