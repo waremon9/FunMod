@@ -1,0 +1,30 @@
+type: GenericCrafter
+name: MagmOre crucible
+description: Heat up magmOre, turning it into a hot liquid.
+liquidCapacity: 50
+size: 2
+health: 480
+hasPower: true
+hasLiquids: true
+itemCapacity: 10
+craftTime: 20
+updateEffect: smeltsmoke
+consumes: {
+  power: 0.45
+  item: magmore
+}
+requirements: [
+  magmore/30
+  graphite/20
+  fun-alloy/20
+  titanium/80
+]
+category: crafting
+research: cryofluidmixer
+idleSound: respawning
+idleSoundVolume: 0.5
+outputLiquid: {
+  liquid: molten-magmore
+  amount: 12.5
+}
+

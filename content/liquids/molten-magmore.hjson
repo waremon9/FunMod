@@ -1,0 +1,7 @@
+name: Molten magmOre
+description: Magma, right out of a volcano.
+temperature: 0.95
+heatCapacity: 0
+viscosity: 0.85
+effect: melting
+color: ff0000
