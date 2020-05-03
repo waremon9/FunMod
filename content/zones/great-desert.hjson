@@ -1,0 +1,30 @@
+name: Great Desert
+description: Two gang are fighting over the ressources of this place. Build your base while they're busy killing each other and destroy their base to claim this place. 
+loadout: basicNucleus
+startingItems: [
+  copper/200
+  lead/100
+]
+configureObjective:
+{
+    type: Launched 
+    zone: great-desert
+}
+requirements: [
+  {
+    type: ZoneWave
+    zone: funny-pass
+    wave: 14
+  }
+]
+resources: [
+  copper
+  lead
+  titanium
+  thorium
+  coal
+  sand
+  fun
+  iceore
+  magmore
+]
