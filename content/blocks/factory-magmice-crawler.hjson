@@ -1,0 +1,29 @@
+type: UnitFactory
+name: Magmice crawler factory
+description: Build magmice crawler.
+size: 1
+produceTime : 60
+maxSpawn: 8
+unitType: magmice-crawler
+hasItems: true
+hasPower: true
+itemCapacity: 8
+consumes: {
+    power: 0.4
+    items: {
+        items: [
+            iceore/2
+            magmore/2
+        ]
+    }
+}
+requirements: [
+  silicon/10
+  graphite/10
+  magmore/5
+  iceore/5
+]
+category: units
+research: crawler-factory
+idleSound: respawning
+idleSoundVolume: 0.5

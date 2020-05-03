@@ -1,0 +1,27 @@
+type: UnitFactory
+name: Thorium crawler factory
+description: Build thorium crawler.
+size: 2
+produceTime : 600
+maxSpawn: 5
+unitType: thorium-crawler
+hasItems: true
+hasPower: true
+itemCapacity: 70
+consumes: {
+    power: 1.6
+    items: {
+        items: [
+            thorium/35
+        ]
+    }
+}
+requirements: [
+  silicon/20
+  thorium/25
+  lead/80
+]
+category: units
+research: crawler-factory
+idleSound: respawning
+idleSoundVolume: 0.5

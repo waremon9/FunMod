@@ -1,0 +1,28 @@
+type: GroundUnit
+name: Thorium crawler
+description: You know what happen when you have a thorium reactor without coulant? Same here, but it's moving. (and a bit less powerful)
+speed: 0.11
+maxVelocity: 0.7
+flying: false
+health: 500
+mass: 6
+hitsize : 20
+rotatespeed: 0.1
+shootCone: 360
+range: 16
+weapon:
+{
+    name: nothing
+    shootcone: 360
+    reload: 10
+    shootSound: shootBig
+    bullet:
+    {
+        instantDisappear: true
+        killShooter: true
+        splashDamageRadius: 75
+        splashDamage: 650
+        hitEffect: commandSend
+        despawnEffect: explosion
+    }
+}
