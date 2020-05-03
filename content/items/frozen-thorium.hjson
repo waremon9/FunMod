@@ -1,0 +1,7 @@
+type: material
+name: Frozen thorium
+description: It's COLD!!! and radiactive.
+color: ffffff
+explosiveness : 0.0
+flammability : 0.0
+radioactivity: 1.0

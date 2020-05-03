@@ -1,0 +1,33 @@
+type: GenericSmelter
+name: Thorium freezer
+description: Make frozen thorium with cryofluid and iceOre
+size: 3
+health: 1000
+hasItems: true
+hasLiquids: true
+itemCapacity: 10
+liquidCapacity: 20
+craftTime: 45
+updateEffect: producesmoke
+consumes: {
+  items: {
+    items: [
+      thorium/1
+      iceore/1
+    ]
+  }
+  liquid: {
+      liquid: cryofluid
+      amount: 0.18
+  }
+}
+requirements: [
+  thorium/60
+  graphite/40
+  iceore/60
+]
+category: crafting
+research: phase-weaver
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: frozen-thorium/1
