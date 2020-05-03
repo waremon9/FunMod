@@ -25,7 +25,6 @@ consumes: {
 requirements: [
   iceore/60
   magmore/60
-  explosun/20
   super-fun-alloy/5
 ]
 category: crafting
