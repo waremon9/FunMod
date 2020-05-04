@@ -1,0 +1,11 @@
+name: Large frozen Wall
+description: A large wall made of frozen thorium.
+type: Wall
+health: 6800
+size: 1
+requirements: [
+    thorium/50
+    frozen-thorium/100
+]
+category: defense
+research: frozen-wall

@@ -1,0 +1,11 @@
+name: Frozen Wall
+description: A wall made of frozen thorium.
+type: Wall
+health: 1760
+size: 1
+requirements: [
+    thorium/10
+    frozen-thorium/24
+]
+category: defense
+research: iceore-wall
