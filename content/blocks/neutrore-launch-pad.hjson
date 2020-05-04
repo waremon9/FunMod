@@ -1,0 +1,21 @@
+name: Neutrore Launch Pad
+description: Even faster with more storage.
+type: LaunchPad
+itemCapacity: 700
+hasItems: true
+hasPower: true
+consumesPower: true
+health: 6000
+size: 4
+requirements: [
+    graphite/100
+    neutrore/60
+    copper/600
+]
+category: effect
+research: launch-pad-large
+launchTime: 600
+consumes: {
+    power: 0.8
+    
+}
