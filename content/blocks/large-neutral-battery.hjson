@@ -1,0 +1,17 @@
+type: Battery
+name: Large neutral battery
+size: 3
+description: A large battery made out of neutrore.
+health: 1300
+canOverdrive: true
+consumes: {
+    powerBuffered: 750000.0
+}
+requirements: [
+  lead/2000
+  silicon/500
+  neutrore/150
+]
+category: power
+research: neutral-battery
+  

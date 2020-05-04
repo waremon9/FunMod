@@ -1,0 +1,18 @@
+type: Battery
+name: Large FUN battery
+size: 3
+description: A large battery made out of FUN.
+health: 700
+canOverdrive: true
+consumes: {
+    powerBuffered: 260000.0
+}
+requirements: [
+  copper/200
+  graphite/50
+  fun/100
+  fun-alloy/30
+]
+category: power
+research: fun-battery
+  

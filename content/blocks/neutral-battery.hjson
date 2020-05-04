@@ -1,0 +1,17 @@
+type: Battery
+name: neutral battery
+size: 1
+description: A battery made out of neutrore.
+health: 550
+canOverdrive: true
+consumes: {
+    powerBuffered: 60000.0
+}
+requirements: [
+  lead/200
+  silicon/50
+  neutrore/30
+]
+category: power
+research: fun-battery
+  
