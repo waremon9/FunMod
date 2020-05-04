@@ -49,24 +49,16 @@ for (var i = 0; i < 50; i++) {
 
 const mortar = extendContent(Block, "mortar", {
     buildConfiguration(tile, table){
-        var findIt = false;
-        this.mortarList.forEach(e => {
-            if(e[0] == tile.x && e[1] == tile.y){
-                rightMortar = e;
-                findIt = true;
-            }
-        })
-        
-        if(!findIt){ //only happen once per tower
-            rightMortar = [tile.x, tile.y, false, 0];
-            this.mortarList.push(rightMortar)
-        }
+        rightMortar = this.findRightEntity(tile)
 
         table.addImageButton(Icon.upOpen, Styles.clearTransi, run(() => {
             tile.configure(1)
-        })).size(50).disabled(boolf(b => tile.entity != null && !tile.entity.cons.valid() || (new Date().getTime() - rightMortar[4]) < 1000 ))
+        })).size(50).disabled(boolf(b => tile.entity != null && !tile.entity.cons.valid() || (new Date().getTime() - rightMortar[4]) < 1000) )
         table.addImageButton(Icon.lock, Styles.clearTransi, run(() => {
             tile.configure(2)
+        })).size(50).disabled(boolf(b => tile.entity == null ))
+        table.addImageButton(Icon.settings, Styles.clearTransi, run(() => {
+            tile.configure(3)
         })).size(50).disabled(boolf(b => tile.entity == null))
     },
 
@@ -85,16 +77,12 @@ const mortar = extendContent(Block, "mortar", {
         return angle;
     },
 
-    //[mortarX, mortarY, locked, angle, last shoot]
+    //[mortarX, mortarY, locked, angle, lastshoot, autoMode]
     mortarList : [],
 
     configured(tile, player, value){
 
-        this.mortarList.forEach(e => {
-            if(e[0] == tile.x && e[1] == tile.y){
-                rightMortar = e;
-            }
-        })
+        rightMortar = this.findRightEntity(tile);
 
         if (value == 1 && tile.entity.cons.valid()){
             Effects.effect(mortarLaunchEffect, tile)
@@ -102,10 +90,8 @@ const mortar = extendContent(Block, "mortar", {
             //do math to known angle
             if(!rightMortar[2]) angle = this.doSomeMath(tile, player);
 
-            for(var i = 0; i< listMortarBullet.length; i++){
-                if (rightMortar[2]) Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), rightMortar[3], 0.95, 4.5);
-                else Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), angle, 0.95, 4.5)
-            }
+            this.shootNow(tile);
+
             rightMortar[4] =  new Date().getTime();
             tile.entity.cons.trigger()
         }
@@ -114,6 +100,53 @@ const mortar = extendContent(Block, "mortar", {
             if(rightMortar[2]) rightMortar[2] = false;
             else rightMortar[2] = true;
             rightMortar[3] = this.doSomeMath(tile, player);
+        }
+
+        else if(value == 3){
+            rightMortar[5] = !rightMortar[5];
+        }
+    },
+
+    shootNow(tile){
+        for(var i = 0; i< listMortarBullet.length; i++){
+            if (rightMortar[2]) Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), rightMortar[3], 0.95, 4.5);
+            else Calls.createBullet(listMortarBullet[i], tile.getTeam(), tile.drawx(), tile.drawy(), angle, 0.95, 4.5)
+        }
+    },
+
+    findRightEntity(tile){
+        var findIt = false;
+        this.mortarList.forEach(e => {
+            if(e[0] == tile.x && e[1] == tile.y){
+                rightMortar = e;
+                findIt = true;
+            }
+        })
+        
+        if(!findIt){ //only happen once per tower
+            rightMortar = [tile.x, tile.y, false, 0, new Date().getTime(), false];
+            this.mortarList.push(rightMortar)
+        }
+
+        return rightMortar;
+    },
+
+    
+    draw(tile){
+        this.super$draw(tile)
+        
+        rightMortar = this.findRightEntity(tile);
+
+        if(rightMortar[2]) Draw.rect(Core.atlas.find(this.name + "-lock"), tile.drawx(), tile.drawy());
+        if(rightMortar[5]) Draw.rect(Core.atlas.find(this.name + "-auto"), tile.drawx(), tile.drawy());
+    },
+
+    update(tile){
+        rightMortar = this.findRightEntity(tile);
+        if(tile.entity.cons.valid() && rightMortar[5] && (new Date().getTime() - rightMortar[4])>=1000 && rightMortar[2]){
+            this.shootNow(tile);
+            rightMortar[4] =  new Date().getTime();
+            tile.entity.cons.trigger()
         }
     }
 })
