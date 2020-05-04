@@ -1,0 +1,11 @@
+type: Conveyor
+name: Alpha conveyor
+description: By combining the power of the neutrore, the cooling strenght of the frozen thorium and the hardness of super FUN alloy, we can create this powerful conveyor.
+requirements: [
+  neutrore/5
+  frozen-thorium/5
+  super-fun-alloy/5
+]
+category: distribution
+speed: 0.3
+research: neutrore-conveyor
