@@ -18,7 +18,7 @@ consumes: {
   }
   liquid: {
     liquid: slag
-    amount: 7.65
+    amount: 1.33
   }
 }
 requirements: [
