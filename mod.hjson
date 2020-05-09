@@ -1,10 +1,10 @@
 name: "my-fun-mod"
 displayName: "[green]MY[gold] FUN [white] mod" //what displays in the mod selection menu
 author: "Waremon"
-description: "Welcome to this FUN mod!! It add some new ore, items, crafter(and other thing that make stuff), power generator, walls, turrets and 1 map.
+description: "Welcome to this FUN mod!! It add some new ore, items, crafter(and other thing that make stuff), power generator, storage, walls, turrets and 2 map.
 Still under development so more will come.
 If YOU have any feedback, tell me. I'm not the best at balancing things so any advice are welcome.
 And i'm absolutly not sorry if any of the sprite make your eyes burn.
 Have FUN!!!"
-version: "1.2.0"
+version: "1.3.0"
 minGameVersion: "103"
