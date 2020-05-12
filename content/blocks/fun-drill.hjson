@@ -4,6 +4,15 @@ type: Drill
 size: 2
 tier: 3
 drillTime: 220
+rotateSpeed: 2.8
+consumes: {
+    liquid: {
+        liquid: water
+        amount: 0.55
+        booster: true
+        optional: true
+    }
+}
 requirements: [
   fun/80
   fun-alloy/40

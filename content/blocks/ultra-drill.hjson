@@ -5,7 +5,7 @@ size: 5
 tier: 5
 drillTime: 105
 warmupSpeed : 0.0008
-rotateSpeed: 3.5
+rotateSpeed: 6.5
 drawRim: true
 consumes: {
     power: 7

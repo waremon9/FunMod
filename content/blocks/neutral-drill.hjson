@@ -4,8 +4,15 @@ type: Drill
 size: 3
 tier: 4
 drillTime: 185
+rotateSpeed: 3.7
 consumes: {
     power: 1.58
+    liquid: {
+        liquid: water
+        amount: 0.7
+        booster: true
+        optional: true
+    }
 }
 requirements: [
   iceore/50

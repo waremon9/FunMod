@@ -4,8 +4,16 @@ type: Drill
 size: 4
 tier: 4
 drillTime: 160
+rotateSpeed: 4.5
+drawRim: true
 consumes: {
     power: 3.9
+    liquid: {
+        liquid: water
+        amount: 0.11
+        booster: true
+        optional: true
+    }
 }
 requirements: [
   fun/650
