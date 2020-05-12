@@ -1,0 +1,14 @@
+type: PowerNode
+name: Super power node
+description: Transfers power like a large node.
+size: 1
+health: 300
+maxNodes: 30
+laserRange: 9.5
+requirements: [
+    lead/30
+    titanium/15
+    silicon/9
+]
+category: "power"
+research: "power-node-large"
