@@ -1,0 +1,26 @@
+name: Ultra Drill
+description: One of the strongest drill you will get. (But it use a lots of power and take some time to go full power)
+type: Drill
+size: 5
+tier: 5
+drillTime: 105
+warmupSpeed : 0.0008
+rotateSpeed: 3.5
+drawRim: true
+consumes: {
+    power: 7
+    liquid: {
+        liquid: water
+        amount: 0.145
+        booster: true
+        optional: true
+    }
+}
+requirements: [
+    titanium/1000
+    thorium/200
+    plastanium/45
+    surge-alloy/20
+]
+category: production
+research: blast-drill
