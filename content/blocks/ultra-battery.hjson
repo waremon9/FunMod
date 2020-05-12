@@ -1,0 +1,17 @@
+type: Battery
+name: Ultra battery
+size: 5
+description: One of the best out there.
+health: 1000
+canOverdrive: true
+consumes: {
+    powerBuffered: 625000.0
+}
+requirements: [
+    titanium/200
+    thorium/40
+    plastanium/40
+]
+category: power
+research: battery-large
+  
