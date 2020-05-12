@@ -1,0 +1,14 @@
+type: ThermalGenerator
+name: Large thermal generator
+description: A bigger and stronger thermal generator
+size: 3
+hasPower: true
+powerProduction: 5.5
+requirements: [
+  metaglass/80
+  silicon/60
+  lead/200
+]
+generateEffect: lava
+category: power
+research: thermal-generator
