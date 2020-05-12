@@ -4,7 +4,7 @@ description: Transfers power using the stable capacity of neutrOre.
 size: 1
 health: 300
 maxNodes: 25
-laserRange: 9
+laserRange: 15
 requirements: [
     neutrore/15
     silicon/5
