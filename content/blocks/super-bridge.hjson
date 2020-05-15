@@ -1,0 +1,11 @@
+type: BufferedItemBridge
+name: Super bridge
+description: A better bridge. Can extend over 6 blocks.
+range: 7
+speed: 1
+requirements: [
+    copper/30
+    titanium/20
+]
+category: distribution
+research: neutrore-conveyor
