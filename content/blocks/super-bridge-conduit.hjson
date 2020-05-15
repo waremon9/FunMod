@@ -1,0 +1,11 @@
+type: LiquidBridge
+name: Super liquid bridge
+description: A better liquid bridge. Can extend over 6 blocks.
+range: 7
+requirements: [
+    copper/30
+    titanium/20
+    metaglass/20
+]
+category: liquid
+research: bridge-conduit
