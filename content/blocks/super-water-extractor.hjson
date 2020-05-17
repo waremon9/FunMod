@@ -1,0 +1,20 @@
+type: Fracker
+name: Super water Extractor
+description: Extracts even more water from the ground using power.
+liquidCapacity: 90
+size: 3
+hasPower: true
+hasLiquids: true
+pumpAmount: 0.9
+consumes: {
+    power: 4.8
+}
+requirements: [
+    thorium/20
+    metaglass/50
+    titanium/100
+]
+category: production
+research: water-extractor
+idleSound: respawning
+idleSoundVolume: 0.5
